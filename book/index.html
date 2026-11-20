@@ -3,7 +3,7 @@
 <head><script>window.__SS_BASE="";</script><script src="/local/demo-data.js"></script><script src="/local/boot.js"></script>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<title>命書 · 順順命理館</title>
+<title>命書 · 潮汐命理館</title>
 <style>
   :root { --bg:#18191A; --panel:#202124; --gold:#D4AF37; --gold2:#E8C96A; --pink:#F43F6B; --txt:#F5EFE0; --dim:#A09A8C; }
   * { box-sizing:border-box; margin:0; padding:0; -webkit-tap-highlight-color:transparent; }
@@ -104,7 +104,7 @@
     var b = document.getElementById('book');
     document.getElementById('making').style.display = 'none';
     b.style.display = '';
-    document.title = plan.title + ' · 順順命理館';
+    document.title = plan.title + ' · 潮汐命理館';
 
     // 打码兑现区：teaser 里 202▓▓ 年 ▓▓ 月，这里给完整年份
     var loveYear = (facts.loveYM || '').split('-')[0];
@@ -137,14 +137,14 @@
     }).join('');
 
     b.innerHTML =
-      '<div class="cover"><div class="brand">順順命理館 · 命書</div>' +
+      '<div class="cover"><div class="brand">潮汐命理館 · 命書</div>' +
       '<h1>' + esc(plan.title) + '</h1>' +
       '<div class="who">' + esc(plan.name || '') + '</div>' +
       '<div class="meta">' + MASTERS[slug] + ' 老師 撰<br>' + new Date(plan.createdAt || Date.now()).toLocaleDateString('zh-TW') + ' 出品</div>' +
       '<div class="rule"></div></div>' + reveal + parts +
       '<div class="upsell"><h3>還沒看的兩本</h3>' +
       '<div class="lead">命書看完的人，通常會想知道另外兩件事：<br>手相會不會改運、八字裡的財從哪來。</div>' + ups + '</div>' +
-      '<div class="fin">本命書由 AI 依傳統命理架構生成，供娛樂與自我探索參考。<br>© 順順命理館</div>';
+      '<div class="fin">本命書由 AI 依傳統命理架構生成，供娛樂與自我探索參考。<br>© 潮汐命理館</div>';
     window.scrollTo(0, 0);
   }
 
